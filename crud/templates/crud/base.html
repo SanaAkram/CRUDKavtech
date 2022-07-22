@@ -1,0 +1,25 @@
+<!doctype html>
+{% load  static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'crud/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>CRUD </title>
+  </head>
+  <body>
+      <div class="container mt-5">
+          <h2 class="text-center alert-blue">CRUD Application</h2>
+          {% block addshow %}
+
+          {% endblock %}
+      </div>
+   <script src="{% static 'crud/js/jquery.js' %}"> </script>
+   <script src="{% static 'crud/js/popper.js' %}"> </script>
+   <script src="{% static 'crud/js/bootstrap.min.js' %}"> </script>
+  </body>
+</html>
